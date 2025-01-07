@@ -1,34 +1,85 @@
-# Methods, Help & Documentation Practice #1
-# Remove the characters to the left of our main text:
+# functions are ways to wrap your code
+# into reuseable units 
+# I only define the function ONCE
+# whatever i pass inside the parentheses 
+# is called a paramter
+# a parameter is a placeholder for future information
+# def sayHello(name, age, address):
+#     print(f"say Hello{name}")
+#     print(f"Hello Govenor your address is {address}")
+#     print(f"welcome back{name}")
+#     print(f"your age is {age}")
 
-# ,
+# once you define a function
+# you must call or invoke the function
+# When I pass in information into the
+# the called function, its called an argument
+# sayHello(" evins", 34, "345 north landale")
+# sayHello(" Devin", 24, "345 south landale")
+# sayHello(" Lara", 45, "345 west landale")
 
-# :
+# def determineEligiblity(age):   #age is the parameter
+#     # If your age is over 18, you can vote,
+#     # otherwise you cant
+#     if age >=18:
+#         print('you can vote')
+#     else:
+#         print('you have to wait')
 
-# %
+# determineEligiblity(12)
+# determineEligiblity(18)
+# determineEligiblity(19)
 
-# _
+# def WillYouGraduate(gpa,credit,SAT): # gpa, credit, and sat means it has 3 parameters
+#     # gpa : number float varaible 
+#     # credits :number varaible
+#     # passed SAT : BOOLEAN
+#     if(gpa == 3.0) and (credit == 20) and (SAT == True):
+#         print("you passed. Good luck in College")
+#     elif (gpa <3.0 ) or (credit < 20) or (SAT != True):
+#         print('talk to your counselor')
 
-# #
 
-# Use the lstrip() method. Print the result to the screen:
-
-# ",:_#,,,,,,:::____##Total_ _Pyt%on,,,,,,::#"
-
-# Search the documentation for the requested method to learn how it works. You can use intermediate variables if you need them.
+# WillYouGraduate(2.0, 15, True)
+# WillYouGraduate(3.0, 20, True)
+# WillYouGraduate(1.0, 2, False)
 
 
-# Methods, Help & Documentation Practice #2
-# Add the element "orange" as the fourth element of the following list fruits, using the insert() method:
 
-# fruits = ["mango", "banana", "cherry", "plum", "grapefruit"]
+# return = statement used to end a function
+#          and send back to the caller
 
-# Search the documentation for the requested method to know how it works.
+# z = 3
 
-# Methods, Help & Documentation Practice #3
-# Check if the sets below are isolated (that is, they have no elements in common), using the isdisjoint() method. Store this result in the isolated_sets variable:
+# def add(x,y):
+#     z = x+y
+#     return z 
 
-# phone_brands = {"Samsung", "Xiaomi", "Apple", "Huawei", "LG"}
-# tv_brands = {"Sony", "Philips", "Samsung", "LG"}
-# Search the documentation for the requested method to know how it works.
+
+# def subtract(x,y):
+#     z = x-y
+#     return z 
+
+# def multiply (x,y):
+#     z = x * y
+#     return z 
+
+
+# def divide (x,y):
+#     z = x/y
+#     return z 
+
+
+# print(add(1,2))
+# print(subtract(1,2))
+# print(multiply(1,2))
+# print(divide(1,2))
+
+def create_name(First, Last):
+    First = First.capitalize()
+    Last = Last.capitalize()
+    return First + " " + Last
+
+full_name = create_name("Spongebob", "squarepants")
+print(full_name)
 
