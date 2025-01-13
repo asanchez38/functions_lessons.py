@@ -3,7 +3,9 @@
 
 # You should only define the function, you should not call it later.
 
-
+def helloWorld(greet):
+    print(greet)
+helloWorld("Hello World")
 
 
 
@@ -17,7 +19,11 @@
 # Note: Only define the function and create the variable. Do not call the function afterwards.
 
 
+def welcome(name):
+    print(f"welcome {name}")
 
+welcome('padilla')
+    
 
 
 
@@ -27,3 +33,9 @@
 # The name of the argument that this function must take is number. Create this variable and assign it any number.
 
 # You should only define the function and create the variable, you should not call the function afterwards.
+import math 
+def square(x):
+    z = math.sqrt(x)
+    print(z)
+
+square(144)
